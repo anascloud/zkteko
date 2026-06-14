@@ -1,0 +1,37 @@
+{
+    "name": "anascloud/zkteko",
+    "description": "A Laravel package for ZKTeco biometric devices, ported from a Python implementation.",
+    "keywords": [
+        "laravel",
+        "zkteko",
+        "attendance",
+        "biometric"
+    ],
+    "homepage": "https://github.com/anascloud/zkteko",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "anascloud",
+            "email": "anascloud@example.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Anascloud\\Zkteko\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Anascloud\\Zkteko\\ZktekoServiceProvider"
+            ],
+            "aliases": {
+                "Zkteko": "Anascloud\\Zkteko\\Facades\\Zkteko"
+            }
+        }
+    }
+}
